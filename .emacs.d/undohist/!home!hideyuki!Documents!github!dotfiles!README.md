@@ -1,0 +1,3 @@
+
+((digest . "9ee99448fd48d6b053384b1c79e1b651") (undo-list nil ("
+" . 228) ((marker) . -1) ((marker) . -1) ((marker . 228) . -1) ((marker) . -1) nil ("emacs.d/themes/emacs-color-theme-solarized" . 228) ((marker) . -42) nil (311 . 313) nil (291 . 311) nil (271 . 291) nil (271 . 272) nil (333 . 334) nil (315 . 333) nil (295 . 315) nil (275 . 295) nil ("-" . -275) nil (271 . 276) nil (254 . 270) nil ("=" . -254) nil ("t" . -255) nil ("h" . -256) nil (250 . 257) nil ("l" . -250) nil ("o" . -251) nil (249 . 252) nil (229 . 249) nil ("a" . -229) nil ("m" . -230) nil (228 . 231) nil (227 . 228) (227 . 228) (t 21480 52050 478638 626000)))

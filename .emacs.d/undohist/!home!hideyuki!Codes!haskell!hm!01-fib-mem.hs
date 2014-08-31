@@ -1,0 +1,2 @@
+
+((digest . "e00c664a70a0c91e0d8bd9136eaf02dc") (undo-list nil (49 . 50) nil (47 . 53) nil ("." . -47) nil (35 . 48) nil ("m" . -35) nil ("e" . -36) nil ("m" . -37) nil ("o" . -38) nil ("r" . -39) nil ("i" . -40) nil ("z" . -41) nil ("e" . -42) nil (34 . 43) nil ("-" . -34) nil (29 . 35) nil ("b" . -29) nil ("i" . -30) nil ("f" . -31) nil (26 . 32) nil (25 . 26) nil (16 . 25) nil ("0" . -16) nil (1 . 17) nil (1 . 2) (t 21488 46964 688172 985000)))

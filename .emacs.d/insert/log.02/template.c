@@ -1,0 +1,13 @@
+/*
+ * %file% -
+ *
+ *   Copyright (c) 2014  hmiyahara512(Hideyuki Miyahara)  <hmiyahara512@gmail.com>
+ *
+ */
+
+#include <stdio.h>
+
+int main () {
+
+  return 0;
+}

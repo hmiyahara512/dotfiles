@@ -1,0 +1,817 @@
+[月, 25  8月 2014 22:58:01 virt-manager 12522] INFO (cli:71) virt-manager startup
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (virt-manager:314) Launched as: /usr/share/virt-manager/virt-manager.py
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (virt-manager:315) GTK version: (2, 24, 23)
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (virt-manager:316) virt-manager version: 0.9.5
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (virt-manager:317) virtManager import: <module 'virtManager' from '/usr/share/virt-manager/virtManager/__init__.pyc'>
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (cli:118) virtinst version: 0.600.4
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (cli:119) virtinst import: <module 'virtinst' from '/usr/lib/python2.7/dist-packages/virtinst/__init__.pyc'>
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (engine:411) No inspection thread because libguestfs is too old, not available, or libvirt is not thread safe.
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (systray:138) Showing systray: False
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (engine:202) About to connect to uris []
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (manager:172) Showing manager
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (engine:327) window counter incremented to 1
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (engine:155) Determining default libvirt URI
+[月, 25  8月 2014 22:58:01 virt-manager 12522] DEBUG (packageutils:44) Asking PackageKit what's installed locally.
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (asyncjob:184) Creating async job for function cb=<function _do_async_search at 0x7f26b8ea36e0>
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (packageutils:72) Missing packages: []
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (packageutils:78) All packages found locally.
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (manager:172) Showing manager
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:963) Scheduling background open thread for qemu:///system
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:1019) Background 'open connection' thread is running
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:1070) Background open thread complete, scheduling notify
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:1075) Notifying open result
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:1082) qemu:///system capabilities:
+<capabilities>
+
+  <host>
+    <uuid>05fe4a35-3ade-4db9-b4ae-168621c768ae</uuid>
+    <cpu>
+      <arch>x86_64</arch>
+      <model>SandyBridge</model>
+      <vendor>Intel</vendor>
+      <topology sockets='1' cores='4' threads='2'/>
+      <feature name='erms'/>
+      <feature name='smep'/>
+      <feature name='fsgsbase'/>
+      <feature name='rdrand'/>
+      <feature name='f16c'/>
+      <feature name='osxsave'/>
+      <feature name='pcid'/>
+      <feature name='pdcm'/>
+      <feature name='xtpr'/>
+      <feature name='tm2'/>
+      <feature name='est'/>
+      <feature name='smx'/>
+      <feature name='vmx'/>
+      <feature name='ds_cpl'/>
+      <feature name='monitor'/>
+      <feature name='dtes64'/>
+      <feature name='pbe'/>
+      <feature name='tm'/>
+      <feature name='ht'/>
+      <feature name='ss'/>
+      <feature name='acpi'/>
+      <feature name='ds'/>
+      <feature name='vme'/>
+    </cpu>
+    <power_management>
+      <suspend_disk/>
+      <suspend_hybrid/>
+    </power_management>
+    <migration_features>
+      <live/>
+      <uri_transports>
+        <uri_transport>tcp</uri_transport>
+      </uri_transports>
+    </migration_features>
+    <topology>
+      <cells num='1'>
+        <cell id='0'>
+          <memory unit='KiB'>32914852</memory>
+          <cpus num='8'>
+            <cpu id='0' socket_id='0' core_id='0' siblings='0,4'/>
+            <cpu id='1' socket_id='0' core_id='1' siblings='1,5'/>
+            <cpu id='2' socket_id='0' core_id='2' siblings='2,6'/>
+            <cpu id='3' socket_id='0' core_id='3' siblings='3,7'/>
+            <cpu id='4' socket_id='0' core_id='0' siblings='0,4'/>
+            <cpu id='5' socket_id='0' core_id='1' siblings='1,5'/>
+            <cpu id='6' socket_id='0' core_id='2' siblings='2,6'/>
+            <cpu id='7' socket_id='0' core_id='3' siblings='3,7'/>
+          </cpus>
+        </cell>
+      </cells>
+    </topology>
+    <secmodel>
+      <model>apparmor</model>
+      <doi>0</doi>
+    </secmodel>
+    <secmodel>
+      <model>dac</model>
+      <doi>0</doi>
+      <baselabel type='kvm'>+117:+125</baselabel>
+      <baselabel type='qemu'>+117:+125</baselabel>
+    </secmodel>
+  </host>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='alpha'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-alpha</emulator>
+      <machine maxCpus='4'>clipper</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='armv7l'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-arm</emulator>
+      <machine maxCpus='1'>borzoi</machine>
+      <machine maxCpus='4'>virt</machine>
+      <machine maxCpus='4'>midway</machine>
+      <machine maxCpus='1'>tosa</machine>
+      <machine maxCpus='1'>cheetah</machine>
+      <machine maxCpus='4'>vexpress-a15</machine>
+      <machine maxCpus='1'>realview-pb-a8</machine>
+      <machine maxCpus='1'>collie</machine>
+      <machine maxCpus='1'>n800</machine>
+      <machine maxCpus='4'>highbank</machine>
+      <machine maxCpus='1'>kzm</machine>
+      <machine maxCpus='1'>sx1-v1</machine>
+      <machine maxCpus='1'>integratorcp</machine>
+      <machine maxCpus='2'>smdkc210</machine>
+      <machine maxCpus='1'>akita</machine>
+      <machine maxCpus='1'>canon-a1100</machine>
+      <machine maxCpus='1'>spitz</machine>
+      <machine maxCpus='1'>verdex</machine>
+      <machine maxCpus='4'>realview-eb-mpcore</machine>
+      <machine maxCpus='2'>nuri</machine>
+      <machine maxCpus='1'>xilinx-zynq-a9</machine>
+      <machine maxCpus='1'>n810</machine>
+      <machine maxCpus='1'>terrier</machine>
+      <machine maxCpus='1'>mainstone</machine>
+      <machine maxCpus='1'>musicpal</machine>
+      <machine maxCpus='4'>realview-pbx-a9</machine>
+      <machine maxCpus='1'>lm3s6965evb</machine>
+      <machine maxCpus='4'>vexpress-a9</machine>
+      <machine maxCpus='1'>cubieboard</machine>
+      <machine maxCpus='1'>realview-eb</machine>
+      <machine maxCpus='1'>sx1</machine>
+      <machine maxCpus='1'>connex</machine>
+      <machine maxCpus='1'>z2</machine>
+      <machine maxCpus='1'>lm3s811evb</machine>
+      <machine maxCpus='1'>versatilepb</machine>
+      <machine maxCpus='1'>versatileab</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='cris'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-cris</emulator>
+      <machine maxCpus='1'>axis-dev88</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='i686'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-i386</emulator>
+      <machine canonical='pc-i440fx-trusty' maxCpus='255'>pc</machine>
+      <machine maxCpus='255'>pc-0.12</machine>
+      <machine maxCpus='255'>pc-1.3</machine>
+      <machine maxCpus='255'>pc-q35-1.6</machine>
+      <machine maxCpus='255'>pc-q35-1.5</machine>
+      <machine maxCpus='1'>xenpv</machine>
+      <machine maxCpus='255'>pc-i440fx-1.6</machine>
+      <machine maxCpus='255'>pc-i440fx-1.7</machine>
+      <machine maxCpus='255'>pc-0.11</machine>
+      <machine maxCpus='255'>pc-0.10</machine>
+      <machine maxCpus='255'>pc-1.2</machine>
+      <machine maxCpus='1'>isapc</machine>
+      <machine maxCpus='255'>pc-q35-1.4</machine>
+      <machine maxCpus='128'>xenfv</machine>
+      <machine maxCpus='255'>pc-0.15</machine>
+      <machine maxCpus='255'>pc-0.14</machine>
+      <machine maxCpus='255'>pc-i440fx-1.5</machine>
+      <machine canonical='pc-q35-2.0' maxCpus='255'>q35</machine>
+      <machine maxCpus='255'>pc-i440fx-1.4</machine>
+      <machine maxCpus='255'>pc-1.1</machine>
+      <machine maxCpus='255'>pc-q35-1.7</machine>
+      <machine maxCpus='255'>pc-1.0</machine>
+      <machine maxCpus='255'>pc-i440fx-2.0</machine>
+      <machine maxCpus='255'>pc-0.13</machine>
+      <domain type='qemu'>
+      </domain>
+      <domain type='kvm'>
+        <emulator>/usr/bin/qemu-system-i386</emulator>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <acpi default='on' toggle='yes'/>
+      <apic default='on' toggle='no'/>
+      <pae/>
+      <nonpae/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='lm32'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-lm32</emulator>
+      <machine maxCpus='1'>lm32-evr</machine>
+      <machine maxCpus='1'>milkymist</machine>
+      <machine maxCpus='1'>lm32-uclinux</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='m68k'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-m68k</emulator>
+      <machine maxCpus='1'>mcf5208evb</machine>
+      <machine maxCpus='1'>dummy</machine>
+      <machine maxCpus='1'>an5206</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='microblaze'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-microblaze</emulator>
+      <machine maxCpus='1'>petalogix-s3adsp1800</machine>
+      <machine maxCpus='1'>petalogix-ml605</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='microblazeel'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-microblazeel</emulator>
+      <machine maxCpus='1'>petalogix-s3adsp1800</machine>
+      <machine maxCpus='1'>petalogix-ml605</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-mips</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <machine maxCpus='1'>mips</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mipsel'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-mipsel</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <machine maxCpus='1'>mips</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-mips64</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <machine maxCpus='1'>mips</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='mips64el'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-mips64el</emulator>
+      <machine maxCpus='16'>malta</machine>
+      <machine maxCpus='1'>mipssim</machine>
+      <machine maxCpus='1'>magnum</machine>
+      <machine maxCpus='1'>fulong2e</machine>
+      <machine maxCpus='1'>mips</machine>
+      <machine maxCpus='1'>pica61</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppc'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-ppc</emulator>
+      <machine maxCpus='1'>g3beige</machine>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='32'>ppce500</machine>
+      <machine maxCpus='15'>mpc8544ds</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='1'>prep</machine>
+      <machine maxCpus='1'>mac99</machine>
+      <machine maxCpus='1'>taihu</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppc64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-ppc64</emulator>
+      <machine maxCpus='256'>pseries</machine>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='32'>ppce500</machine>
+      <machine maxCpus='15'>mpc8544ds</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='1'>g3beige</machine>
+      <machine maxCpus='1'>prep</machine>
+      <machine maxCpus='1'>mac99</machine>
+      <machine maxCpus='1'>taihu</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='ppcemb'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-ppcemb</emulator>
+      <machine maxCpus='1'>ref405ep</machine>
+      <machine maxCpus='1'>virtex-ml507</machine>
+      <machine maxCpus='1'>bamboo</machine>
+      <machine maxCpus='1'>taihu</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='s390x'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-s390x</emulator>
+      <machine canonical='s390-virtio' maxCpus='255'>s390</machine>
+      <machine canonical='s390-ccw-virtio' maxCpus='255'>s390-ccw</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sh4'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-sh4</emulator>
+      <machine maxCpus='1'>shix</machine>
+      <machine maxCpus='1'>r2d</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sh4eb'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-sh4eb</emulator>
+      <machine maxCpus='1'>shix</machine>
+      <machine maxCpus='1'>r2d</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sparc'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-sparc</emulator>
+      <machine maxCpus='1'>SS-5</machine>
+      <machine maxCpus='1'>SS-4</machine>
+      <machine maxCpus='1'>SPARCbook</machine>
+      <machine maxCpus='4'>SS-600MP</machine>
+      <machine maxCpus='1'>Voyager</machine>
+      <machine maxCpus='4'>SS-10</machine>
+      <machine maxCpus='1'>SPARCClassic</machine>
+      <machine maxCpus='4'>SS-20</machine>
+      <machine maxCpus='1'>leon3_generic</machine>
+      <machine maxCpus='1'>LX</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='sparc64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-sparc64</emulator>
+      <machine maxCpus='1'>sun4u</machine>
+      <machine maxCpus='1'>Niagara</machine>
+      <machine maxCpus='1'>sun4v</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+    <features>
+      <deviceboot/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='unicore32'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-unicore32</emulator>
+      <machine maxCpus='1'>puv3</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='x86_64'>
+      <wordsize>64</wordsize>
+      <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      <machine canonical='pc-i440fx-trusty' maxCpus='255'>pc</machine>
+      <machine maxCpus='255'>pc-1.3</machine>
+      <machine maxCpus='255'>pc-0.12</machine>
+      <machine maxCpus='255'>pc-q35-1.6</machine>
+      <machine maxCpus='255'>pc-q35-1.5</machine>
+      <machine maxCpus='1'>xenpv</machine>
+      <machine maxCpus='255'>pc-i440fx-1.6</machine>
+      <machine maxCpus='255'>pc-i440fx-1.7</machine>
+      <machine maxCpus='255'>pc-0.11</machine>
+      <machine maxCpus='255'>pc-1.2</machine>
+      <machine maxCpus='255'>pc-0.10</machine>
+      <machine maxCpus='1'>isapc</machine>
+      <machine maxCpus='255'>pc-q35-1.4</machine>
+      <machine maxCpus='128'>xenfv</machine>
+      <machine maxCpus='255'>pc-0.15</machine>
+      <machine maxCpus='255'>pc-0.14</machine>
+      <machine maxCpus='255'>pc-i440fx-1.5</machine>
+      <machine maxCpus='255'>pc-i440fx-1.4</machine>
+      <machine canonical='pc-q35-2.0' maxCpus='255'>q35</machine>
+      <machine maxCpus='255'>pc-1.1</machine>
+      <machine maxCpus='255'>pc-q35-1.7</machine>
+      <machine maxCpus='255'>pc-1.0</machine>
+      <machine maxCpus='255'>pc-i440fx-2.0</machine>
+      <machine maxCpus='255'>pc-0.13</machine>
+      <domain type='qemu'>
+      </domain>
+      <domain type='kvm'>
+        <emulator>/usr/bin/qemu-system-x86_64</emulator>
+      </domain>
+    </arch>
+    <features>
+      <cpuselection/>
+      <deviceboot/>
+      <acpi default='on' toggle='yes'/>
+      <apic default='on' toggle='no'/>
+    </features>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='xtensa'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-xtensa</emulator>
+      <machine maxCpus='4'>sim</machine>
+      <machine maxCpus='4'>lx60</machine>
+      <machine maxCpus='4'>kc705</machine>
+      <machine maxCpus='4'>ml605</machine>
+      <machine maxCpus='4'>lx200</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+  <guest>
+    <os_type>hvm</os_type>
+    <arch name='xtensaeb'>
+      <wordsize>32</wordsize>
+      <emulator>/usr/bin/qemu-system-xtensaeb</emulator>
+      <machine maxCpus='4'>sim</machine>
+      <machine maxCpus='4'>kc705</machine>
+      <machine maxCpus='4'>ml605</machine>
+      <machine maxCpus='4'>lx200</machine>
+      <machine maxCpus='4'>lx60</machine>
+      <domain type='qemu'>
+      </domain>
+    </arch>
+  </guest>
+
+</capabilities>
+
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (util:63) Attempting to build default pool with target '/var/lib/libvirt/images'
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (Storage:452) Creating storage pool 'default' with xml:
+<pool type='dir'>
+  <name>default</name>
+  <uuid>f25b44f5-a55b-b6c5-9f64-1c25b6bbb639</uuid>
+  <target>
+    <path>/var/lib/libvirt/images</path>
+  </target>
+</pool>
+
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:161) Using libvirt API for netdev enumeration
+[月, 25  8月 2014 22:58:02 virt-manager 12522] DEBUG (connection:201) Using libvirt API for mediadev enumeration
+[月, 25  8月 2014 22:58:05 virt-manager 12522] DEBUG (create:169) Showing new vm wizard
+[月, 25  8月 2014 22:58:05 virt-manager 12522] DEBUG (create:884) Guest type set to os_type=hvm, arch=x86_64, dom_type=kvm
+[月, 25  8月 2014 22:58:14 virt-manager 12522] DEBUG (storagebrowse:74) Showing storage browser
+[月, 25  8月 2014 22:58:18 virt-manager 12522] DEBUG (config:702) get_default_directory(isomedia): returning /home/hideyuki
+[月, 25  8月 2014 22:58:36 virt-manager 12522] DEBUG (config:710) set_default_directory(isomedia): saving /mnt/sdd1.HDD-3TB/OS.log/ubuntu
+[月, 25  8月 2014 22:58:36 virt-manager 12522] DEBUG (storagebrowse:80) Closing storage browser
+[月, 25  8月 2014 22:58:40 virt-manager 12522] DEBUG (DistroInstaller:220) DistroInstaller location is a local file/path: /mnt/sdd1.HDD-3TB/OS.log/ubuntu/ubuntu-14.04-desktop-amd64.iso
+[月, 25  8月 2014 22:58:50 virt-manager 12522] DEBUG (create:1057) Default storage path is: /var/lib/libvirt/images/Ubuntu14.04.img
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (VirtualDisk:240) Path '/var/lib/libvirt/images' is target for pool 'default'. Creating volume 'Ubuntu14.04.img'.
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (DistroInstaller:220) DistroInstaller location is a local file/path: /mnt/sdd1.HDD-3TB/OS.log/ubuntu/ubuntu-14.04-desktop-amd64.iso
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (create:1057) Default storage path is: /var/lib/libvirt/images/Ubuntu14.04.img
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (VirtualDisk:240) Path '/var/lib/libvirt/images' is target for pool 'default'. Creating volume 'Ubuntu14.04.img'.
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (create:1888) Creating a VM Ubuntu14.04
+  Type: kvm,hvm
+  UUID: 428afb44-bcc9-498c-ed61-b1206f532926
+  Install Source: /mnt/sdd1.HDD-3TB/OS.log/ubuntu/ubuntu-14.04-desktop-amd64.iso
+  OS: None:None
+  Kernel args: None
+  Memory: 1024
+  Max Memory: 1024
+  # VCPUs: 1
+  Filesize: 16.0
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (asyncjob:184) Creating async job for function cb=<bound method vmmCreate.do_install of <vmmCreate object at 0x7f26b02a8a50 (virtManager+create+vmmCreate at 0x2e07060)>>
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (create:1977) Starting background install process
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (Storage:1196) Creating storage volume 'Ubuntu14.04.img' with xml:
+<volume>
+  <name>Ubuntu14.04.img</name>
+  <capacity>17179869184</capacity>
+  <allocation>17179869184</allocation>
+  <target>
+    <format type='raw'/>
+  </target>
+</volume>
+
+[月, 25  8月 2014 22:58:51 virt-manager 12522] DEBUG (Storage:1220) Storage volume 'Ubuntu14.04.img' install complete.
+[月, 25  8月 2014 22:58:52 virt-manager 12522] DEBUG (Guest:1293) Generated install XML: 
+<domain type='kvm'>
+  <name>Ubuntu14.04</name>
+  <uuid>428afb44-bcc9-498c-ed61-b1206f532926</uuid>
+  <memory>1048576</memory>
+  <currentMemory>1048576</currentMemory>
+  <vcpu>1</vcpu>
+  <os>
+    <type arch='x86_64'>hvm</type>
+    <boot dev='cdrom'/>
+    <boot dev='hd'/>
+  </os>
+  <features>
+    <acpi/><apic/><pae/>
+  </features>
+  <clock offset="utc"/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>destroy</on_reboot>
+  <on_crash>destroy</on_crash>
+  <devices>
+    <emulator>/usr/bin/qemu-system-x86_64</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='raw'/>
+      <source file='/var/lib/libvirt/images/Ubuntu14.04.img'/>
+      <target dev='hda' bus='ide'/>
+    </disk>
+    <disk type='file' device='cdrom'>
+      <driver name='qemu'/>
+      <source file='/mnt/sdd1.HDD-3TB/OS.log/ubuntu/ubuntu-14.04-desktop-amd64.iso'/>
+      <target dev='hdc' bus='ide'/>
+      <readonly/>
+    </disk>
+    <interface type='network'>
+      <source network='default'/>
+      <mac address='52:54:00:8d:65:e2'/>
+    </interface>
+    <input type='mouse' bus='ps2'/>
+    <graphics type='vnc' port='-1'/>
+    <console type='pty'/>
+    <sound model='ich6'/>
+    <video>
+      <model type='cirrus'/>
+    </video>
+  </devices>
+</domain>
+
+[月, 25  8月 2014 22:58:52 virt-manager 12522] DEBUG (Guest:1294) Generated boot XML: 
+<domain type='kvm'>
+  <name>Ubuntu14.04</name>
+  <uuid>428afb44-bcc9-498c-ed61-b1206f532926</uuid>
+  <memory>1048576</memory>
+  <currentMemory>1048576</currentMemory>
+  <vcpu>1</vcpu>
+  <os>
+    <type arch='x86_64'>hvm</type>
+    <boot dev='hd'/>
+  </os>
+  <features>
+    <acpi/><apic/><pae/>
+  </features>
+  <clock offset="utc"/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>restart</on_crash>
+  <devices>
+    <emulator>/usr/bin/qemu-system-x86_64</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='raw'/>
+      <source file='/var/lib/libvirt/images/Ubuntu14.04.img'/>
+      <target dev='hda' bus='ide'/>
+    </disk>
+    <disk type='block' device='cdrom'>
+      <target dev='hdc' bus='ide'/>
+      <readonly/>
+    </disk>
+    <interface type='network'>
+      <source network='default'/>
+      <mac address='52:54:00:8d:65:e2'/>
+    </interface>
+    <input type='mouse' bus='ps2'/>
+    <graphics type='vnc' port='-1'/>
+    <console type='pty'/>
+    <sound model='ich6'/>
+    <video>
+      <model type='cirrus'/>
+    </video>
+  </devices>
+</domain>
+
+[月, 25  8月 2014 22:58:52 virt-manager 12522] DEBUG (Storage:1254) Couldn't lookup storage volume in prog thread.
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (connection:579) Connection managed save support: True
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (Guest:1324) Started guest, connecting to console if requested
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (Guest:1332) XML fetched from libvirt object:
+<domain type='kvm' id='2'>
+  <name>Ubuntu14.04</name>
+  <uuid>428afb44-bcc9-498c-ed61-b1206f532926</uuid>
+  <memory unit='KiB'>1048576</memory>
+  <currentMemory unit='KiB'>1048576</currentMemory>
+  <vcpu placement='static'>1</vcpu>
+  <resource>
+    <partition>/machine</partition>
+  </resource>
+  <os>
+    <type arch='x86_64' machine='pc-i440fx-trusty'>hvm</type>
+    <boot dev='cdrom'/>
+    <boot dev='hd'/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  <clock offset='utc'/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>destroy</on_reboot>
+  <on_crash>destroy</on_crash>
+  <devices>
+    <emulator>/usr/bin/qemu-system-x86_64</emulator>
+    <disk type='file' device='disk'>
+      <driver name='qemu' type='raw'/>
+      <source file='/var/lib/libvirt/images/Ubuntu14.04.img'/>
+      <target dev='hda' bus='ide'/>
+      <alias name='ide0-0-0'/>
+      <address type='drive' controller='0' bus='0' target='0' unit='0'/>
+    </disk>
+    <disk type='file' device='cdrom'>
+      <driver name='qemu' type='raw'/>
+      <source file='/mnt/sdd1.HDD-3TB/OS.log/ubuntu/ubuntu-14.04-desktop-amd64.iso'/>
+      <target dev='hdc' bus='ide'/>
+      <readonly/>
+      <alias name='ide0-1-0'/>
+      <address type='drive' controller='0' bus='1' target='0' unit='0'/>
+    </disk>
+    <controller type='usb' index='0'>
+      <alias name='usb0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x2'/>
+    </controller>
+    <controller type='pci' index='0' model='pci-root'>
+      <alias name='pci.0'/>
+    </controller>
+    <controller type='ide' index='0'>
+      <alias name='ide0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x1'/>
+    </controller>
+    <interface type='network'>
+      <mac address='52:54:00:8d:65:e2'/>
+      <source network='default'/>
+      <target dev='vnet0'/>
+      <model type='rtl8139'/>
+      <alias name='net0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </interface>
+    <serial type='pty'>
+      <source path='/dev/pts/10'/>
+      <target port='0'/>
+      <alias name='serial0'/>
+    </serial>
+    <console type='pty' tty='/dev/pts/10'>
+      <source path='/dev/pts/10'/>
+      <target type='serial' port='0'/>
+      <alias name='serial0'/>
+    </console>
+    <input type='mouse' bus='ps2'/>
+    <input type='keyboard' bus='ps2'/>
+    <graphics type='vnc' port='5900' autoport='yes' listen='127.0.0.1'>
+      <listen type='address' address='127.0.0.1'/>
+    </graphics>
+    <sound model='ich6'>
+      <alias name='sound0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x04' function='0x0'/>
+    </sound>
+    <video>
+      <model type='cirrus' vram='9216' heads='1'/>
+      <alias name='video0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0'/>
+    </video>
+    <memballoon model='virtio'>
+      <alias name='balloon0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/>
+    </memballoon>
+  </devices>
+  <seclabel type='dynamic' model='apparmor' relabel='yes'>
+    <label>libvirt-428afb44-bcc9-498c-ed61-b1206f532926</label>
+    <imagelabel>libvirt-428afb44-bcc9-498c-ed61-b1206f532926</imagelabel>
+  </seclabel>
+</domain>
+
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (create:1984) Install completed
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (create:178) Closing new vm wizard
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (storagebrowse:80) Closing storage browser
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (details:562) Showing VM details: <vmmDomain object at 0x7f26b025c820 (virtManager+domain+vmmDomain at 0x2e3d580)>
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (engine:327) window counter incremented to 2
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (config:175) Error importing spice: No module named SpiceClientGtk
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (console:1135) Starting connect process for proto=vnc trans=None connhost=localhost connuser=None connport=None gaddr=127.0.0.1 gport=5900 gsocket=None
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (console:415) VNC connection to 127.0.0.1:5900
+[月, 25  8月 2014 22:58:53 virt-manager 12522] DEBUG (console:1048) Viewer connected

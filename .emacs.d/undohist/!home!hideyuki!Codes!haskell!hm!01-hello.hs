@@ -1,0 +1,2 @@
+
+((digest . "00acc49fa598a3da5c28f977b8a8f35f") (undo-list (31 . 32) nil (21 . 31) nil ("o" . -21) nil (18 . 22) nil (":" . -18) nil (15 . 19) nil ("e" . -15) nil ("n" . -16) nil (11 . 17) nil ("s" . -11) nil ("t" . -12) nil ("r" . -13) nil (5 . 14) nil ("=" . -5) nil (" " . -6) nil ("=" . -7) nil (5 . 8) nil (" " . -5) nil ("=" . -6) nil (6 . 7) nil ("+" . -6) nil (1 . 7) nil ("i" . -1) nil ("n" . -2) nil (1 . 3) (t 0 0 0 -1000)))
